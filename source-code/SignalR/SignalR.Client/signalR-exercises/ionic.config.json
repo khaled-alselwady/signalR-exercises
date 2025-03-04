@@ -1,0 +1,7 @@
+{
+  "name": "signalR-exercises",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
