@@ -32,3 +32,9 @@ C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\obj\Debug\net9.0\refi
 C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\obj\Debug\net9.0\SignalR.Server.pdb
 C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\obj\Debug\net9.0\SignalR.Server.genruntimeconfig.cache
 C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\obj\Debug\net9.0\ref\SignalR.Server.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\DnsClient.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\SharpCompress.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\Snappier.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Server\bin\Debug\net9.0\ZstdSharp.dll

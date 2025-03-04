@@ -1,10 +1,15 @@
+using MongoDB.Driver;
 using SignalR.Server.Hubs;
+using SignalR.Server.MongoDB;
+using SignalR.Server.MongoDB.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddOpenApi();
 builder.Services.AddSignalR();
+builder.Services.AddSingleton<MongoDbService>();
+builder.Services.AddSingleton<UserCountService>();
 
 // Configure CORS
 builder.Services.AddCors(options =>
