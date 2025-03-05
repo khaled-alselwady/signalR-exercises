@@ -6,10 +6,12 @@ using SignalR.Server.MongoDB.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<MongoDbService>();
 builder.Services.AddSingleton<UserCountService>();
+builder.Services.AddSingleton<VotingService>();
 
 // Configure CORS
 builder.Services.AddCors(options =>
@@ -33,6 +35,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAll");  // Enable CORS before other middleware
 app.UseHttpsRedirection(); // HTTPS redirection middleware
+app.MapControllers();
 app.MapHub<UserHub>("/UserCount");
+app.MapHub<VotingHub>("/Voting");
 
 app.Run();

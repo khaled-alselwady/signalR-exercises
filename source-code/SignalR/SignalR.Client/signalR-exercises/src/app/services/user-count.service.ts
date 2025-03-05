@@ -4,7 +4,7 @@ import * as signalR from '@microsoft/signalr';
 @Injectable({
   providedIn: 'root'
 })
-export class UserCountService implements OnInit, OnDestroy {
+export class UserCountService {
 
   private _hubConnection?: signalR.HubConnection;
   private _totalViews = 0;
@@ -34,30 +34,13 @@ export class UserCountService implements OnInit, OnDestroy {
     this._hubConnection?.start().then(() => this.fullfilled(), () => this.regected());
   }
 
-  ngOnDestroy(): void {
-    //this.onDisconnected();
-  }
-
-  ngOnInit(): void {
-
-  }
-
   newWindowLoadedOnClient(): void {
     this._hubConnection?.send('NewWindowLoaded');
-  }
-
-  onConnected() {
-    this._hubConnection?.send('OnDisconnectedAsync');
-  }
-
-  onDisconnected() {
-    this._hubConnection?.send('OnDisconnectedAsync');
   }
 
   fullfilled() {
     console.log('fullfilled');
     this.newWindowLoadedOnClient();
-    //this.onConnected();
   }
 
   regected() {
