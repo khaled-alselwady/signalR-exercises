@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'house-events',
     loadChildren: () => import('./exercises/house-events/house-events.module').then( m => m.HouseEventsPageModule)
+  },
+  {
+    path: 'notification',
+    loadChildren: () => import('./exercises/notification/notification.module').then( m => m.NotificationPageModule)
   }
 ];
 

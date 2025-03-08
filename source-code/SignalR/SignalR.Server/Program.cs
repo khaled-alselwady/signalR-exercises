@@ -39,5 +39,6 @@ app.MapControllers();
 app.MapHub<UserHub>("/UserCount");
 app.MapHub<VotingHub>("/Voting");
 app.MapHub<HouseGroupHub>("/HouseGroup");
+app.MapHub<NotificationHub>("/Notification");
 
 app.Run();
