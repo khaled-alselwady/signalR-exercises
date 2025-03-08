@@ -1,0 +1,12 @@
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\bin\Debug\net9.0\SignalR.Client.deps.json
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\bin\Debug\net9.0\SignalR.Client.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\bin\Debug\net9.0\SignalR.Client.pdb
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.AssemblyInfoInputs.cache
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.AssemblyInfo.cs
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.csproj.CoreCompileInputs.cache
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.sourcelink.json
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\refint\SignalR.Client.dll
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\SignalR.Client.pdb
+C:\Khaled\SignalRCourse\source-code\SignalR\SignalR.Client\obj\Debug\net9.0\ref\SignalR.Client.dll

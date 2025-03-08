@@ -27,23 +27,24 @@ public class VotingController : ControllerBase
         if (voting == null)
         {
             voting = new Voting();
+            
             _UpdateVotingCount(voting, type);
-
             await _votingService.AddVotingCountAsync(voting);
         }
+        else
+        {
+            _UpdateVotingCount(voting, type);
+            await _votingService.UpdateVotingCountAsync(voting);
+        }
 
-        _UpdateVotingCount(voting, type);
-
-        await _votingService.UpdateVotingCountAsync(voting);
-
-        _hubContext.Clients.All.SendAsync("updateVotingCount", voting.Cloak, voting.Stone, voting.Wand);
+        await _hubContext.Clients.All.SendAsync("updateVotingCount", voting.Cloak, voting.Stone, voting.Wand);
 
         return Ok();
     }
 
     private void _UpdateVotingCount(Voting voting, string type)
     {
-        switch (type.ToString())
+        switch (type.ToLower())
         {
             case "cloak":
                 voting.Cloak++;

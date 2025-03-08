@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'voting',
     loadChildren: () => import('./exercises/voting/voting.module').then( m => m.VotingPageModule)
+  },
+  {
+    path: 'house-events',
+    loadChildren: () => import('./exercises/house-events/house-events.module').then( m => m.HouseEventsPageModule)
   }
 ];
 

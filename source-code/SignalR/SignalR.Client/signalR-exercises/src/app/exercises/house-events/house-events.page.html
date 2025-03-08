@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>House Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="row border p-1 mt-3">
+    <h3>Subscribed List: </h3>
+    <hr/>
+    <div class="row p-2">
+      <div class="col-6">
+        <label style="color:#B52033">{{ groupsName }}</label>
+      </div>
+    </div>
+  </div>
+  <div class="row border p-1 mt-3">
+    <h3>Subscribe: </h3>
+    <hr/>
+    <div class="row p-2">
+      <div class="col-3">
+        <button *ngIf="subscriberButtons.Gryffindor" class="btn" style="background-color:#B52033"
+                (click)="onSubscribe('Gryffindor')">Gryffindor
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="subscriberButtons.Slytherin" class="btn" style="background-color:#236E50"
+                (click)="onSubscribe('Slytherin')">Slytherin
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="subscriberButtons.Hufflepuff" class="btn" style="background-color:#EDB526"
+                (click)="onSubscribe('Hufflepuff')">Hufflepuff
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="subscriberButtons.Ravenclaw" class="btn" style="background-color:#10749F"
+                (click)="onSubscribe('Ravenclaw')">Ravenclaw
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row border p-1 mt-3">
+    <h3>Unsubscribe: </h3>
+    <hr/>
+    <div class="row p-2">
+      <div class="col-3">
+        <button *ngIf="!subscriberButtons.Gryffindor" class="btn" style="background-color:#B52033;"
+                (click)="onUnSubscribe('Gryffindor')">Gryffindor
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="!subscriberButtons.Slytherin" class="btn" style="background-color:#236E50;"
+                (click)="onUnSubscribe('Slytherin')">Slytherin
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="!subscriberButtons.Hufflepuff" class="btn" style="background-color:#EDB526;"
+                (click)="onUnSubscribe('Hufflepuff')">Hufflepuff
+        </button>
+      </div>
+      <div class="col-3">
+        <button *ngIf="!subscriberButtons.Ravenclaw" class="btn" style="background-color:#10749F;"
+                (click)="onUnSubscribe('Ravenclaw')">Ravenclaw
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row border p-1 mt-3">
+    <h3>Trigger Notification: </h3>
+    <hr/>
+    <div class="row p-2">
+      <div class="col-3">
+        <button class="btn" style="background-color:#B52033" (click)="onTriggerNotification('Gryffindor')">Gryffindor
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn" style="background-color:#236E50" (click)="onTriggerNotification('Slytherin')">Slytherin
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn" style="background-color:#EDB526" (click)="onTriggerNotification('Hufflepuff')">Hufflepuff
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn" style="background-color:#10749F" (click)="onTriggerNotification('Ravenclaw')">Ravenclaw
+        </button>
+      </div>
+    </div>
+  </div>
+</ion-content>

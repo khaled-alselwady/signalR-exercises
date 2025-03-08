@@ -35,3 +35,26 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Customizing Toastr Background Color */
+.toast {
+  background-color: #4caf50 !important;  /* Green background, you can choose any color */
+  color: white !important;               /* White text */
+}
+
+/* Customize other types of Toastr notifications */
+.toast-success {
+  background-color: #4caf50 !important;  /* Green for success */
+}
+
+.toast-error {
+  background-color: #f44336 !important;  /* Red for error */
+}
+
+.toast-warning {
+  background-color: #ff9800 !important;  /* Orange for warning */
+}
+
+.toast-info {
+  background-color: #2196f3 !important;  /* Blue for info */
+}
